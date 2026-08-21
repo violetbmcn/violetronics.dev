@@ -1,83 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landing Page</title>
-<link rel="icon" href="head.png">
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #d3d3d3;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;      /* stack items vertically */
-    justify-content: center;
-    align-items: center;
-    text-align: center;          /* center the paragraph text */
-    height: 100vh;
-    overflow: hidden;
-    cursor: pointer;
-}
-img {
-    width: 60vw;
-    height: auto;
-    display: block;
-    pointer-events: none;
-}
-p {
-    margin: 0.5em 0;             /* tighten up spacing since br's aren't needed */
-}
-.footer-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8vh;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    color: #333;
-}
-.song-title {
-    font-size: 2.5vw;
-    white-space: nowrap;
-    text-transform: lowercase;
-    letter-spacing: 0.1em;
-}
-</style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Violet's world</title>
+        <link rel="icon" href="head.png">
+    </head>
 
-<img src="landingimage2.jpg" alt="Landing Image">
+    <body>
 
-<audio id="bgMusic" loop>
-<source src="stuck in a car with angels [-GEjqO8J234].mp3" type="audio/mpeg">
-</audio>
+        <header>
+            <h1> Welcome to my crazy lit website! </h1> 
+        </header>
 
-<script>
-const audio = document.getElementById('bgMusic');
-audio.volume = 0.2;
+        <img style="width: 400px",  src="landingimage2.jpg" alt="Landing Image">
 
-window.addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
-    }
-});
-</script>
+        <audio id="bgMusic" loop>
+            <source src="stuck in a car with angels [-GEjqO8J234].mp3" type="audio/mpeg">
+        </audio>
 
-<p>
-    check out my <a href="tutor.html">tutoring</a> page.
-</p>
-<p>
-    check out my dead start up at <a href="https://signclub.vbmcn.com">signclub</a>
-</p>
+        <script>
+            const audio = document.getElementById('bgMusic');
+            audio.volume = 0.2;
 
-</body>
+            window.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        </script>
+
+        <p>
+            Hey everyone, this is going to be a site where I write reviews of crazy lit stuff, <br>
+            and maybe post some of the work or notes i make for others to benefit from.
+        </p>
+        <p>
+            check out my <a href="tutor.html">tutoring</a> page. also check out my dead start 
+            up at <a href="https://signclub.vbmcn.com">signclub</a>
+        </p>
+
+        <p>
+            <h2>PGP</h2>
+            <pre style="word-wrap: break-word; white-space: pre-wrap; padding-left: -10px;">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+xjMEaohLARYJKwYBBAHaRw8BAQdAE1MWfTMwAjNwN/8608Xk6eAXRIk89JP3
+Cm4wPUHuLJHNOFZpb2xldCBBbGV4YW5kZXIgQnVzdG9zLU1jTmVpbCA8dmlv
+bGV0YnVzdG9zQGljbG91ZC5jb20+wsAZBBMWCgCLBYJqiEsBBYkPCZwAAwsJ
+BwkQMDPsHSXS7LFFFAAAAAAAHAAgc2FsdEBub3RhdGlvbnMub3BlbnBncGpz
+Lm9yZ4/mofYXfvddamvI1TEs2n7Uo7QLWooJBcAccpg09s4mBRUKCA4MBBYA
+AgECGQECmwMCHgEWIQT079IfNiWTpH0qMJAwM+wdJdLssQAAvWYBAJ9c4tF2
+1NqX4ZQGBJZzUCCK8wOgQG+yJcv5xHwYgeKPAP45+JQ4KQzsubgPsiEEMmQu
+SsYQ4kWF5tyaMnCqUpmHAs44BGqISwESCisGAQQBl1UBBQEBB0Dp2vFh730v
+t9Rv1v7f0cA4uVyjlgkefvgRXe8usBbRQgMBCAfCwAQEGBYKAHYFgmqISwEF
+iQ8JnAAJEDAz7B0l0uyxRRQAAAAAABwAIHNhbHRAbm90YXRpb25zLm9wZW5w
+Z3Bqcy5vcmdhnhc5Hq3ytlq14NUxE82oI5Cu2wxnRqtHr8j2Fn/3ngKbDBYh
+BPTv0h82JZOkfSowkDAz7B0l0uyxAABgXQD+Ob3GtdSjzJMZGZ/eHRhWjmV/
+sHGkDJa2KWXPCt5swKABAOQdnIcQxYVY5Tr4poI72pdT8VdIMxOQpWaog2s9
+48MD=oA2B
+-----END PGP PUBLIC KEY BLOCK-----
+            </pre> 
+        </p>
+
+        <p>
+            <h2>donate</h2>
+            <ul>
+                <li>monero : 423di55bckg8S8zp4cbnZWH9hjHqLHiFc2qYGJb57REv<br>aNKjaZ5QoAeG7ZWYd8CeoAboLyqzZu4ksFiXfmrJHnb4AzpBvX8</li>
+            </ul>
+        </p>
+
+        <p> 
+            <h2>find my socials</h2>
+            <ul>
+                <li>mail: violetbustos@icloud.com</li>
+                <li><a href="https://github.com/violetbmcn">github</a></li>
+                <li><a href="https://www.instagram.com/violetbmcn/">instagram</a></li>
+            </ul>
+        </p>
+
+        <p>
+            <h2>find my friends</h2>
+            <ul>
+                <li>quinten <a href="https://quinten.com.au/">quinten.com.au</a></li>
+                <li>liam <a href="https://l-m.dev/">l-m.dev</a></li>
+                <li>iso <a href="https://www.isobel.zip/">isobel.zip</a></li>
+                <li>josh <a href="https://odpay.net/">odpay.net</a></li>
+                <li>evan <a href="https://evan.lat/">evan.lat</a></li>
+                <li>julia <a href="https://kitti.cat/">kitty.cat</a></li>
+                <li>odin <a href="https://odin4252.nekoweb.org/">odin4252.nekoweb.org/</a></li>
+                <li>mrrrp.cat collective <a href="https://mrrrp.cat/">mrrrp.cat</a></li>
+                <li>linsoc <a href="https://linuxunsw.org/">linuxunsw.org</a></li>
+            </ul>
+        </p>
+
+        <footer>
+        </footer>
+    </body>
 </html>
+
+
